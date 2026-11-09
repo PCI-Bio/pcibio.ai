@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>PCI-AI Education · Antibody optimization with cell-line controls</title>
+<meta name="description" content="How IHC results go from unreliable to reproducible: titration, positive and negative controls, and the role of cell-line control panels on the glass.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PCI-AI">
+<meta property="og:title" content="PCI-AI Education · Antibody optimization with cell-line controls">
+<meta property="og:description" content="How IHC results go from unreliable to reproducible: titration, positive and negative controls, and the role of cell-line control panels on the glass.">
+<meta property="og:url" content="https://pcibio.ai/learn-controls">
+<meta property="og:image" content="https://pcibio.ai/img/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b2e5f">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="site.css">
+<style>:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); } [hidden] { display: none !important; }</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav band">
+  <div class="bar">
+    <a class="logo" href="./" aria-label="PCI-AI home">
+      <img src="img/logo-ai-mark.svg" alt="" width="36" height="36">
+      <span class="wm">PCI<span class="ai"> - AI</span></span>
+    </a>
+    <nav aria-label="Site">
+      <a href="./">Overview</a>
+      <a href="platform.html">Platform</a>
+      <a href="trust.html">Safety &amp; data</a>
+      <a href="education.html" aria-current="page">Education</a>
+      <a href="pilot.html#faq">FAQ</a>
+      <a class="cta" href="pilot.html">Start a pilot</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="band white pagehead" aria-labelledby="h1">
+    <div class="inner">
+      <span class="eyebrow"><a href="education.html">Education</a> · IHC biomarker series · 03</span>
+      <h1 id="h1">Antibody optimization with cell-line controls.</h1>
+      <p class="lede">How IHC results go from unreliable to reproducible, and the role cell-line controls play in locking in quality at every step.</p>
+      <div class="objectives">
+        <span class="k">Learning objectives</span>
+        <ul>
+          <li>Understand how cell-line controls remove batch-to-batch variability during titration</li>
+          <li>Follow the six steps from antibody selection to controls on every run</li>
+          <li>See how a null, wild-type and overexpression panel validates a p53 protocol</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <nav class="subnav" aria-label="Sections of this module"><div class="inner"><a href="#s1"><span>01</span>Why optimization matters</a><a href="#s2"><span>02</span>What cell-line controls are and why they are used</a><a href="#s3"><span>03</span>How titration works</a><a href="#s4"><span>04</span>How a control panel on the glass supports this</a></div></nav>
+
+  <section class="band tint" aria-label="Module content">
+    <div class="inner">
+      <div class="edu-body">
+        <article id="s1">
+          <span class="secnum">Section 01</span>
+          <h2>Why optimization matters</h2>
+          <p>IHC sounds simple: apply an antibody, see where it stains, interpret the pattern. In practice a clean, reliable result needs careful calibration. Too much antibody and the stain bleeds into places where the protein is not present (false positives). Too little and real expression goes undetected (false negatives). The wrong incubation time, diluent or tissue preparation produces the same problems.</p>
+          <p>Finding the right conditions, antibody concentration, incubation time, blocking steps and <dfn tabindex="0" data-tip="A preparatory step that unmasks proteins in FFPE tissue that were chemically altered during fixation, so the antibody can bind">antigen retrieval</dfn>, is called <dfn tabindex="0" data-tip="Testing an antibody at several concentrations to find the one that gives clear, specific staining with minimal background">antibody optimization</dfn>, and it has to happen before any result can be trusted diagnostically.</p>
+          <p>The critical issue is reproducibility. A test that works in one laboratory needs to give the same result in another, on a different day, with different staff. Without standardized controls in every run there is no reliable way to confirm that a result reflects the patient's biology rather than a technical variable in that day's staining.</p>
+        </article>
+
+        <article id="s2">
+          <span class="secnum">Section 02</span>
+          <h2>What cell-line controls are and why they are used</h2>
+          <p>Controls are the quality-assurance layer of IHC. Every staining run includes control samples alongside the patient tissue, not to produce diagnostic information but to verify that the run performed correctly before any patient result is trusted.</p>
+          <p><dfn tabindex="0" data-tip="A sample known to express the target protein, run with the patient tissue to confirm the staining procedure worked">Positive controls</dfn> are samples known to express the target. If a positive control fails to stain, something went wrong and no patient result from that run can be trusted. <dfn tabindex="0" data-tip="A sample known not to express the target protein, used to catch false-positive or non-specific background staining">Negative controls</dfn> are samples known not to express it. If a negative control stains, that signals <dfn tabindex="0" data-tip="When an antibody sticks to structures it was not designed to target, producing misleading background staining">non-specific binding</dfn>, a false-positive problem that would also affect patient tissue on the same run.</p>
+          <p>Cell lines make particularly reliable controls because their expression is stable, well characterised and reproducible. Unlike human tissue, which varies between patients, fixation batches and processing, cell lines can be prepared consistently as <dfn tabindex="0" data-tip="Formalin-fixed, paraffin-embedded cells prepared the same way as patient tissue, used as a standardized control material">FFPE cell blocks</dfn> that behave like tissue under the microscope. They are a fixed reference point: you always know what they should look like, so any deviation is meaningful at once.</p>
+        </article>
+
+        <article id="s3">
+          <span class="secnum">Section 03</span>
+          <h2>How titration works</h2>
+          <p>The optimal antibody concentration is found by <dfn tabindex="0" data-tip="Running the same antibody at a series of dilutions to find the one that gives clear, specific staining with minimal background">titration</dfn>: the same antibody at a series of dilutions, for example 1:50, 1:100, 1:200 and 1:400, against a positive and a negative control at the same time. The goal is the concentration with the highest <dfn tabindex="0" data-tip="The balance between true staining signal where the protein is and background noise everywhere else; higher is better">signal-to-noise ratio</dfn>: strong, specific staining where the protein should be and a clean background where it should not.</p>
+          <ol class="steps-p" style="margin-top:22px">
+            <li><div><b>Select the target protein and the antibody.</b><br>Choose a primary antibody validated for IHC. Selection depends on the protein, the host species and the detection platform. Antibodies against the same protein do not perform alike: clone, lot consistency and vendor validation data all affect how a result translates to patient tissue.</div></li>
+            <li><div><b>Prepare positive and negative cell-line controls.</b><br>Source or prepare FFPE cell blocks from lines with known, stable expression of the target (positive) and known absence (negative). Their expression is consistent across preparations, so any deviation is flagged at once.</div></li>
+            <li><div><b>Run the titration series.</b><br>Stain the same antibody at each dilution against both controls under identical conditions, so that only the concentration varies. That isolation is what makes the result interpretable.</div></li>
+            <li><div><b>Compare signal and background across concentrations.</b><br>Too concentrated: both controls stain heavily and look alike, so true expression cannot be told from background. Too dilute: the positive control barely stains and real expression in patient tissue would be missed. The optimum is the highest ratio of true signal to background.</div></li>
+            <li><div><b>Lock in the working concentration.</b><br>The dilution with the clearest separation of positive from negative is validated and fixed as the standard for that antibody on that platform. Every patient run uses it. Any change needs re-validation.</div></li>
+            <li><div><b>Run controls on every patient run, indefinitely.</b><br>A control that stains correctly on Tuesday does not guarantee Friday. Reagents degrade, instruments drift, technicians vary. Controls catch those shifts before they reach a report.</div></li>
+          </ol>
+        </article>
+
+        <article id="s4">
+          <span class="secnum">Section 04</span>
+          <h2>How a control panel on the glass supports this</h2>
+          <p>PCI's TriControl, QuadControl and DualControl panels are ready-made, characterised cell-line controls covering several expression levels of a marker, built to streamline titration and quality control. Instead of sourcing and preparing a control line for each marker, a laboratory runs one panel beside the patient tissue and sees at once whether staining intensity falls in the expected range across high, medium and low (or absent) expression.</p>
+          <p>This is the control concept above in practice. Each core on a TriControl slide is a pre-characterised expression level, so a pathologist calibrates the read of the patient slide against a reference on the same glass. The panel replaces steps 2 to 4 of the titration workflow with a single validated tool.</p>
+          <div class="note"><b>TriControl: three levels on one slide.</b> Null, wild-type and overexpression profiles in a single FFPE cell block. Run it with the patient tissue to verify antibody performance and calibrate scoring across the full range, with no separate control tissue per marker. The software on this site grades every tumor nucleus against those same three lines. <a href="https://www.pcibio.com/controls.html" target="_blank" rel="noopener">View all control panels →</a></div>
+          <p class="sources"><b>Sources:</b> PMC (2014): Antibody Validation of IHC for Biomarker Discovery: Recommendations of a Consortium of Academic and Pharmaceutical Histopathology Researchers · PMC (2016): Immunohistochemistry for Pathologists: Protocols, Pitfalls, and Tips · Abcam: Controls in IHC · Bio-Rad: Crucial Controls and Tips for IHC Experiments · Boster Bio: 6 Essential IHC Controls for Reliable Staining Results · Novus Biologicals (Bio-Techne): IHC Primary Antibody Selection and Optimization.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band next" aria-labelledby="h2n">
+    <div class="inner">
+      <div><h2 id="h2n">Next: AI-assisted biomarker assessment.</h2><p>From a whole-slide image to a quantitative score, with the pathologist still deciding.</p></div>
+      <div class="links"><a class="btn btn-primary" href="learn-ai.html">AI-assisted assessment <span aria-hidden="true">→</span></a><a class="btn btn-quiet" href="education.html#modules">All modules</a></div>
+    </div>
+  </section>
+</main>
+<footer class="band">
+  <div class="inner">
+    <div class="fcol"><strong>Research use only — not for use in diagnostic procedures.</strong><span>PCI · 7505 Fannin St, 640B · Houston, TX 77054</span></div>
+    <div class="fcol links"><a href="mailto:support@pcibio.com">support@pcibio.com</a><a href="https://www.linkedin.com/company/precision-cellular-immunology/posts/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.pcibio.com" target="_blank" rel="noopener">pcibio.com</a><a href="privacy.html">Privacy &amp; terms</a></div>
+  </div>
+</footer>
+<script>
+  (function () {
+    try { if ("scrollRestoration" in history) history.scrollRestoration = "manual"; } catch (e) {}
+    function toTop() { if (!location.hash) window.scrollTo(0, 0); }
+    toTop(); window.addEventListener("pageshow", toTop);
+  })();
+</script>
+</body>
+</html>

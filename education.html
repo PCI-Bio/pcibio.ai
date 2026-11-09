@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>PCI-AI Education</title>
+<meta name="description" content="Guided modules on IHC, H&amp;E, biomarkers, p53 expression patterns, mismatch repair, antibody optimization with cell-line controls, and AI-assisted scoring.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PCI-AI">
+<meta property="og:title" content="PCI-AI Education">
+<meta property="og:description" content="Guided modules on IHC, H&amp;E, biomarkers, p53 expression patterns, mismatch repair, antibody optimization with cell-line controls, and AI-assisted scoring.">
+<meta property="og:url" content="https://pcibio.ai/education">
+<meta property="og:image" content="https://pcibio.ai/img/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b2e5f">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="site.css">
+<style>:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); } [hidden] { display: none !important; }</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav band">
+  <div class="bar">
+    <a class="logo" href="./" aria-label="PCI-AI home">
+      <img src="img/logo-ai-mark.svg" alt="" width="36" height="36">
+      <span class="wm">PCI<span class="ai"> - AI</span></span>
+    </a>
+    <nav aria-label="Site">
+      <a href="./">Overview</a>
+      <a href="platform.html">Platform</a>
+      <a href="trust.html">Safety &amp; data</a>
+      <a href="education.html" aria-current="page">Education</a>
+      <a href="pilot.html#faq">FAQ</a>
+      <a class="cta" href="pilot.html">Start a pilot</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="band white pagehead" aria-labelledby="h1">
+    <div class="inner">
+      <span class="eyebrow">Education</span>
+      <h1 id="h1">Read IHC with confidence.</h1>
+      <p class="lede">Guided modules for pathologists, residents, histotechnologists and research trainees. Start with the foundations if you are new to pathology, then go on to p53, mismatch repair, antibody optimization and AI-assisted scoring.</p>
+      <div class="modnav">
+        <a class="btn btn-primary" href="#foundations">Foundations <span aria-hidden="true">→</span></a>
+        <a class="btn btn-quiet" href="#modules">Modules</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Foundations -->
+  <section class="band tint" id="foundations" aria-labelledby="h2f">
+    <div class="inner">
+      <span class="eyebrow">Foundations</span>
+      <h2 id="h2f">Three ideas every module builds on.</h2>
+      <p class="lede">No prior pathology knowledge required. Each one takes about three minutes, and ends with a short check.</p>
+
+      <div class="edu-body" style="margin-top:36px">
+        <article id="what-is-ihc">
+          <span class="secnum">Foundations 01</span>
+          <h2>What is IHC?</h2>
+          <p>Immunohistochemistry (IHC) is a laboratory technique that uses antibodies to detect specific proteins in tissue samples. It is one of the most widely used diagnostic tools in surgical pathology: it lets a pathologist see which proteins a tissue is expressing, and at what level, directly on a stained glass slide.</p>
+          <p>The technique applies a targeted antibody to a thin slice of tissue mounted on a glass slide. If the protein that antibody is designed to detect is present, the antibody binds to it. A detection system then turns that binding into a visible colour, most often the brown stain <dfn tabindex="0" data-tip="3,3′-diaminobenzidine, the chromogen that turns brown where the antibody has bound">DAB</dfn>, so the pathologist can see exactly where, and how strongly, the protein is expressed.</p>
+          <p>Many cancers are defined not just by how cells look under a microscope but by which proteins those cells express. IHC answers questions such as: is this tumor expressing a receptor a targeted therapy could act on? Has it lost a protein that normally suppresses growth? Is this protein present at a normal level, an elevated level, or not at all? Those answers shape treatment decisions, immunotherapy eligibility and how a cancer is formally classified.</p>
+          <p>A standard IHC slide has two colour components. Hematoxylin (blue to purple) is a counterstain that colours every nucleus and gives a reference map of the tissue. DAB (brown) is the specific signal that appears only where the target protein is present. A pathologist reading the slide looks at where the brown signal appears, how intense it is, and what share of cells show it. No brown means the protein is absent or below the detection threshold; strong, widespread brown means high expression.</p>
+          <div class="quiz" aria-label="Knowledge check: IHC">
+            <span class="k">Knowledge check</span>
+            <div class="q"><p class="qq">What is the purpose of the DAB stain in IHC?</p><div class="opts"><button type="button" class="opt" data-yes="0">To colour all cell nuclei for reference</button><button type="button" class="opt" data-yes="1">To mark where a specific target protein is present</button><button type="button" class="opt" data-yes="0">To preserve the tissue sample</button><button type="button" class="opt" data-yes="0">To identify the type of cancer</button></div><p class="fb" hidden></p></div>
+            <div class="q"><p class="qq">In IHC, what does an antibody bind to?</p><div class="opts"><button type="button" class="opt" data-yes="0">The glass slide</button><button type="button" class="opt" data-yes="0">The hematoxylin counterstain</button><button type="button" class="opt" data-yes="1">A specific protein in the tissue</button><button type="button" class="opt" data-yes="0">The DAB detection reagent</button></div><p class="fb" hidden></p></div>
+            <div class="q"><p class="qq">A pathologist sees no brown staining on an IHC slide. This most likely means:</p><div class="opts"><button type="button" class="opt" data-yes="0">The staining protocol failed</button><button type="button" class="opt" data-yes="0">The tissue was not properly fixed</button><button type="button" class="opt" data-yes="1">The target protein is absent or below the detection threshold</button><button type="button" class="opt" data-yes="0">The antibody was too concentrated</button></div><p class="fb" hidden></p></div>
+            <div class="q"><p class="qq">Which colour does hematoxylin produce on a standard IHC slide?</p><div class="opts"><button type="button" class="opt" data-yes="0">Brown</button><button type="button" class="opt" data-yes="0">Red</button><button type="button" class="opt" data-yes="1">Blue to purple</button><button type="button" class="opt" data-yes="0">Green</button></div><p class="fb" hidden></p></div>
+          <p class="score" hidden></p>
+          </div>
+        </article>
+
+        <article id="what-is-he">
+          <span class="secnum">Foundations 02</span>
+          <h2>What is H&amp;E staining?</h2>
+          <p>Hematoxylin and eosin (H&amp;E) staining is the most fundamental technique in histopathology. It is the first stain applied to virtually every tissue sample submitted for diagnosis, and it remains the primary way pathologists assess tissue architecture and cell morphology.</p>
+          <p>H&amp;E uses two dyes in sequence. Hematoxylin binds to nucleic acids in the nucleus and stains it blue to purple. Because every cell has a nucleus, hematoxylin gives a complete picture of cell distribution and density across the tissue. Eosin binds to proteins in the cytoplasm and the extracellular matrix and stains them pink, revealing the cell body and the surrounding connective tissue.</p>
+          <p>Together the two stains show how cells are organised, how densely they are packed, and whether that organisation looks normal or abnormal. On a well-prepared H&amp;E slide a pathologist can judge the size, shape and appearance of individual cells. Enlarged nuclei, irregular nuclear borders and a high nuclear-to-cytoplasmic ratio are all associated with malignancy. The slide also shows tumor boundaries and the stroma around the tumor: connective tissue, vessels and immune infiltrates.</p>
+          <p>H&amp;E reveals structure, but it cannot say which proteins a cell is expressing. Two tumors that look alike on H&amp;E can have completely different molecular profiles and need different treatment. That is why IHC is used alongside it: H&amp;E establishes what the tissue looks like, IHC establishes what proteins it expresses. In the PCI-AI reading room the pathologist looks at the H&amp;E first, then the p53 slide at the same spot.</p>
+          <div class="quiz" aria-label="Knowledge check: H&E">
+            <span class="k">Knowledge check</span>
+            <div class="q"><p class="qq">What does eosin stain in an H&amp;E preparation?</p><div class="opts"><button type="button" class="opt" data-yes="0">Cell nuclei</button><button type="button" class="opt" data-yes="1">Cytoplasm and extracellular proteins</button><button type="button" class="opt" data-yes="0">Only cancer cells</button><button type="button" class="opt" data-yes="0">The DAB signal</button></div><p class="fb" hidden></p></div>
+            <div class="q"><p class="qq">Why is H&amp;E the foundation of histological diagnosis?</p><div class="opts"><button type="button" class="opt" data-yes="0">It identifies specific protein expression</button><button type="button" class="opt" data-yes="1">It reveals tissue architecture and cell morphology</button><button type="button" class="opt" data-yes="0">It replaces the need for IHC</button><button type="button" class="opt" data-yes="0">It is the only stain that works on FFPE tissue</button></div><p class="fb" hidden></p></div>
+            <div class="q"><p class="qq">A high nuclear-to-cytoplasmic ratio on H&amp;E is associated with:</p><div class="opts"><button type="button" class="opt" data-yes="0">Normal tissue</button><button type="button" class="opt" data-yes="0">Stromal tissue</button><button type="button" class="opt" data-yes="1">Malignancy</button><button type="button" class="opt" data-yes="0">Successful antibody staining</button></div><p class="fb" hidden></p></div>
+            <div class="q"><p class="qq">Which statement best describes H&amp;E and IHC?</p><div class="opts"><button type="button" class="opt" data-yes="0">IHC replaces H&amp;E in modern pathology</button><button type="button" class="opt" data-yes="0">H&amp;E and IHC stain for the same things</button><button type="button" class="opt" data-yes="1">H&amp;E reveals tissue structure; IHC reveals protein expression</button><button type="button" class="opt" data-yes="0">H&amp;E is only used for cancer diagnosis</button></div><p class="fb" hidden></p></div>
+          <p class="score" hidden></p>
+          </div>
+        </article>
+
+        <article id="what-is-a-biomarker">
+          <span class="secnum">Foundations 03</span>
+          <h2>What is a biomarker?</h2>
+          <p>A biomarker is a measurable biological characteristic that tells you something about a normal or abnormal process. In pathology, biomarkers are usually proteins, or the genes that encode them, whose presence, absence or level in tumor tissue carries clinical meaning.</p>
+          <p>Biomarkers classify tumors when morphology alone is ambiguous, predict prognosis where certain profiles go with more or less aggressive disease, and guide treatment where a targeted therapy or immunotherapy only works in tumors that express a specific marker.</p>
+          <p>IHC is one of the primary ways to measure a biomarker in tissue. The pathologist applies an antibody against the marker and evaluates the intensity of the staining, the percentage of cells that stain, and where in the cell the signal sits: nucleus, cytoplasm or membrane. Different biomarkers use different scoring systems. Some are reported as positive or negative. Others use a continuous scale such as the <dfn tabindex="0" data-tip="A score from 0 to 300 that combines staining intensity with the percentage of positive cells">H-score</dfn>. The system depends on the marker and on the clinical question.</p>
+          <p>Four examples. <b>p53</b> is a tumor suppressor encoded by the TP53 gene; its IHC pattern (null, wild-type or overexpression) reflects the underlying mutation status and is used in cancer classification. <b>MLH1, MSH2, MSH6 and PMS2</b> are mismatch repair proteins; loss of nuclear expression of one or more indicates deficient mismatch repair, which bears on immunotherapy eligibility. <b>PD-L1</b> expression in tumor and immune cells is used to predict response to checkpoint inhibitors. <b>HER2</b>, when overexpressed, makes certain breast and gastric cancers eligible for HER2-targeted therapy.</p>
+          <p>Results from one laboratory need to be comparable with another, above all in clinical trials that enrol patients at many sites. Inconsistent antibody concentrations, protocols or scoring criteria can produce different results from the same tissue and change which treatment a patient receives. Standardized controls, validated antibodies and objective scoring tools are what make a biomarker result reproducible.</p>
+          <div class="quiz" aria-label="Knowledge check: biomarkers">
+            <span class="k">Knowledge check</span>
+            <div class="q"><p class="qq">In pathology, what is a biomarker most commonly?</p><div class="opts"><button type="button" class="opt" data-yes="0">A type of staining dye</button><button type="button" class="opt" data-yes="1">A measurable protein whose expression carries clinical meaning</button><button type="button" class="opt" data-yes="0">A microscope setting used to view tissue</button><button type="button" class="opt" data-yes="0">A type of tissue fixation method</button></div><p class="fb" hidden></p></div>
+            <div class="q"><p class="qq">Loss of nuclear expression of MLH1, MSH2, MSH6 or PMS2 on IHC indicates:</p><div class="opts"><button type="button" class="opt" data-yes="0">Overexpression of p53</button><button type="button" class="opt" data-yes="1">Deficient mismatch repair (dMMR)</button><button type="button" class="opt" data-yes="0">Successful antibody optimization</button><button type="button" class="opt" data-yes="0">Normal tissue architecture</button></div><p class="fb" hidden></p></div>
+            <div class="q"><p class="qq">The H-score combines which two factors?</p><div class="opts"><button type="button" class="opt" data-yes="0">Tumor size and cell count</button><button type="button" class="opt" data-yes="1">Staining intensity and percentage of positive cells</button><button type="button" class="opt" data-yes="0">Hematoxylin concentration and eosin concentration</button><button type="button" class="opt" data-yes="0">DAB signal and nuclear-to-cytoplasmic ratio</button></div><p class="fb" hidden></p></div>
+            <div class="q"><p class="qq">Why does standardization across laboratories matter?</p><div class="opts"><button type="button" class="opt" data-yes="0">It makes slides easier to photograph</button><button type="button" class="opt" data-yes="0">It allows pathologists to work faster</button><button type="button" class="opt" data-yes="1">It makes results reproducible and comparable across sites, which affects treatment decisions</button><button type="button" class="opt" data-yes="0">It eliminates the need for IHC controls</button></div><p class="fb" hidden></p></div>
+          <p class="score" hidden></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modules -->
+  <section class="band white" id="modules" aria-labelledby="h2m">
+    <div class="inner">
+      <span class="eyebrow">Modules</span>
+      <h2 id="h2m">Five modules, from the stain to the AI read.</h2>
+      <p class="lede">Assumes basic biology. Each module is a ten-minute read with figures, a glossary in place, and the sources at the end. The last one is three real cases to read yourself.</p>
+      <div class="cards">
+        <a class="card" href="learn-p53.html">
+          <div class="body"><span class="k">IHC biomarker series · 01</span><h3>p53 expression patterns</h3><p>The three patterns, wild-type, null and overexpression, as a surrogate for TP53 mutation status, and how the three control lines give a reference for each.</p><p class="tags">p53 · TP53 · endometrial and ovarian cancer</p></div>
+        </a>
+        <a class="card" href="learn-mmr.html">
+          <div class="body"><span class="k">IHC biomarker series · 02</span><h3>Mismatch repair proteins</h3><p>MLH1, MSH2, MSH6 and PMS2 read as intact or lost, and how the pairing of the four proteins points to the defective gene.</p><p class="tags">MMR · Lynch syndrome · MSI · immunotherapy</p></div>
+        </a>
+        <a class="card" href="learn-controls.html">
+          <div class="body"><span class="k">IHC biomarker series · 03</span><h3>Antibody optimization with cell-line controls</h3><p>Why titration matters, what positive and negative controls prove, and how a control panel on the glass locks in a reproducible stain.</p><p class="tags">titration · FFPE cell block · signal to noise</p></div>
+        </a>
+        <a class="card" href="learn-ai.html">
+          <div class="body"><span class="k">IHC biomarker series · 04</span><h3>AI-assisted biomarker assessment</h3><p>What problem algorithmic scoring solves, how a whole-slide image becomes a quantitative score, and why the pathologist stays the decision maker.</p><p class="tags">digital pathology · whole-slide image · assistive AI</p></div>
+        </a>
+        <a class="card" href="learn-cases.html">
+          <div class="body"><span class="k">IHC biomarker series · 05</span><h3>Case studies</h3><p>Three real cases, one per pattern. Read the slides and the tumor nuclei, make your call, then see what the software read and what the pathologist checks.</p><p class="tags">overexpression · wild-type · null · make your call</p></div>
+        </a>
+      </div>
+
+      <div class="criteria" style="margin-top:32px">
+        <span class="j">The study behind the controls</span>
+        <h3>A cell line–based immunohistochemical p53 expression pattern control panel</h3>
+        <p>Three ovarian cancer cell lines, one for each TP53 status (overexpression, wild-type and null), were assembled into a single p53 control panel. Pathologists using the panel as a reference agreed with each other more than with standard tissue controls alone, and read null expression as wild-type less often, the most consequential p53 error in gynecologic pathology. Next-generation sequencing of the cell lines and of the discordant cases gave a molecular basis for the disagreements. This panel is the foundation of PCI's TriControl product.</p>
+        <p><a href="https://journals.lww.com/intjgynpathology/abstract/2019/09000/a_cell_line_based_immunohistochemical_p53.9.aspx" target="_blank" rel="noopener">International Journal of Gynecological Pathology, September 2019 (abstract)</a> · <a href="trust.html#h2p">All publications</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band next" aria-labelledby="h2n">
+    <div class="inner">
+      <div><h2 id="h2n">Now see the software read a case.</h2><p>Eighty seconds from sign-in to a signed report, then the reading room to click through yourself.</p></div>
+      <div class="links"><a class="btn btn-primary" href="platform.html#demo">Watch the demo <span aria-hidden="true">→</span></a><a class="btn btn-quiet" href="platform.html">Explore the platform</a></div>
+    </div>
+  </section>
+</main>
+<footer class="band">
+  <div class="inner">
+    <div class="fcol"><strong>Research use only — not for use in diagnostic procedures.</strong><span>PCI · 7505 Fannin St, 640B · Houston, TX 77054</span></div>
+    <div class="fcol links"><a href="mailto:support@pcibio.com">support@pcibio.com</a><a href="https://www.linkedin.com/company/precision-cellular-immunology/posts/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.pcibio.com" target="_blank" rel="noopener">pcibio.com</a><a href="privacy.html">Privacy &amp; terms</a></div>
+  </div>
+</footer>
+<script>
+  // Knowledge checks: pick an answer, see the right one, keep a score per check.
+  document.querySelectorAll(".quiz").forEach(function (quiz) {
+    var qs = quiz.querySelectorAll(".q"), done = 0, right = 0, score = quiz.querySelector(".score");
+    qs.forEach(function (q) {
+      var fb = q.querySelector(".fb"), opts = q.querySelectorAll(".opt");
+      opts.forEach(function (b) {
+        b.addEventListener("click", function () {
+          if (q.dataset.done) return;
+          q.dataset.done = "1"; done++;
+          var ok = b.dataset.yes === "1"; if (ok) right++;
+          opts.forEach(function (o) { o.disabled = true; if (o.dataset.yes === "1") o.classList.add("right"); });
+          if (!ok) b.classList.add("wrong");
+          fb.textContent = ok ? "Correct." : "Not quite. The right answer is marked."; fb.hidden = false;
+          if (done === qs.length) { score.textContent = right + " of " + qs.length + " correct."; score.hidden = false; }
+        });
+      });
+    });
+  });
+</script>
+<script>
+  (function () {
+    try { if ("scrollRestoration" in history) history.scrollRestoration = "manual"; } catch (e) {}
+    function toTop() { if (!location.hash) window.scrollTo(0, 0); }
+    toTop(); window.addEventListener("pageshow", toTop);
+  })();
+</script>
+</body>
+</html>

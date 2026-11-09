@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>PCI-AI Safety and Data</title>
+<meta name="description" content="Built-in safeguards, how patient data stays out, and the published science behind the control-line approach.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PCI-AI">
+<meta property="og:title" content="PCI-AI Safety and Data">
+<meta property="og:description" content="Built-in safeguards, how patient data stays out, and the published science behind the control-line approach.">
+<meta property="og:url" content="https://pcibio.ai/trust">
+<meta property="og:image" content="https://pcibio.ai/img/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b2e5f">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="site.css">
+<style>:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); } [hidden] { display: none !important; }</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav band">
+  <div class="bar">
+    <a class="logo" href="./" aria-label="PCI-AI home">
+      <img src="img/logo-ai-mark.svg" alt="" width="36" height="36">
+      <span class="wm">PCI<span class="ai"> - AI</span></span>
+    </a>
+    <nav aria-label="Site">
+      <a href="./">Overview</a>
+      <a href="platform.html">Platform</a>
+      <a href="trust.html" aria-current="page">Safety &amp; data</a>
+      <a href="education.html">Education</a>
+      <a href="pilot.html#faq">FAQ</a>
+      <a class="cta" href="pilot.html">Start a pilot</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="band white pagehead" aria-labelledby="h1">
+    <div class="inner">
+      <span class="eyebrow">Safety &amp; data</span>
+      <h1 id="h1">Built to carry a pathologist's signature.</h1>
+      <p class="lede">The software says when a slide can't be read reliably, the pathologist signs every result, and patient data stays out of the system.</p>
+    </div>
+  </section>
+
+  <section class="band tint" aria-labelledby="h2g">
+    <div class="inner">
+      <span class="eyebrow">Built-in safeguards</span>
+      <h2 id="h2g">When a slide can't be read reliably, it says so.</h2>
+      <p class="lede">Instead of a confident wrong answer, the case gets no call and one plain sentence explaining why. The grades stay available to the lab for review.</p>
+      <div class="guards">
+        <article class="guard"><span class="when">Control lines</span><h3>The controls didn't stain</h3><p>If the three control lines on the slide did not stain as expected, there is no scale to grade against.</p><div class="says"><b>The case reads:</b> No call. The on-slide control lines did not stain enough to grade the tissue.</div></article>
+        <article class="guard"><span class="when">Tumor</span><h3>Too little tumor</h3><p>A call needs enough tumor nuclei. A small or sparse sample is flagged instead of guessed.</p><div class="says"><b>The case reads:</b> No call. Too few tumor nuclei to grade.</div></article>
+        <article class="guard"><span class="when">Slides</span><h3>The two slides don't line up</h3><p>When the tumor region comes from the H&amp;E and the two slides can't be matched, the read stops there.</p><div class="says"><b>The case reads:</b> No call. The H&amp;E and p53 slides could not be aligned.</div></article>
+        <article class="guard"><span class="when">Before signing</span><h3>One deliberate step to sign</h3><p>Signing asks the pathologist to confirm they looked at the slides and read the report. Only pathologists can sign.</p><div class="says"><b>The dialog reads:</b> I looked at the slides and read this report.</div></article>
+        <article class="guard"><span class="when">After signing</span><h3>Signed means final</h3><p>A signed report is locked. Areas, notes and the summary can't be changed afterwards.</p><div class="says"><b>The case reads:</b> Signed by the pathologist. The report is locked.</div></article>
+        <article class="guard"><span class="when">Always</span><h3>Every step on record</h3><p>Who marked the controls, who marked the tumor, who edited the summary and who signed, with the date and time.</p><div class="says"><b>The report reads:</b> Control lines and tumor region marked by the laboratory and the pathologist.</div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band white" aria-labelledby="h2s">
+    <div class="inner">
+      <span class="eyebrow">Data &amp; security</span>
+      <h2 id="h2s">Patient data stays out. Lab data stays separate.</h2>
+      <div class="sec">
+        <div><b>Labels removed at upload</b><span>The slide label and overview photos are stripped from each slide file when it is uploaded.</span></div>
+        <div><b>No patient identity needed</b><span>The online requisition asks for the client's case code, not a name or date of birth.</span></div>
+        <div><b>Encrypted analysis</b><span>Slides are analysed in an encrypted cloud environment, and all traffic to the platform uses HTTPS.</span></div>
+        <div><b>Roles</b><span>Histotechnologists, pathologists and administrators each see and do only what their role needs.</span></div>
+        <div><b>Two-step sign-in</b><span>An authenticator app on top of the password, with one-time backup codes.</span></div>
+        <div><b>Audit trail</b><span>Every view, change and signature is logged in a record that can't be edited after the fact.</span></div>
+      </div>
+      <p class="sources" style="margin-top:14px">Each laboratory sees only its own cases. Research use only — not for use in diagnostic procedures.</p>
+    </div>
+  </section>
+
+  <section class="band tint" aria-labelledby="h2p">
+    <div class="inner">
+      <span class="eyebrow">Published science</span>
+      <h2 id="h2p">The control-line approach is peer reviewed.</h2>
+      <div class="pubs">
+        <article class="pub"><span class="j">International Journal of Gynecological Pathology · 2019</span><h3>A p53 cell line control panel</h3><p>A cell line–based p53 IHC control panel improved agreement between readers and reduced misreading of the null pattern in ovarian cancer subtyping.</p><a href="https://doi.org/10.1097/PGP.0000000000000537" target="_blank" rel="noopener" target="_blank" rel="noopener">Read the highlight <span aria-hidden="true">→</span></a></article>
+        <article class="pub"><span class="j">Laboratory Investigation · 2026 · abstract</span><h3>A machine learning tool to quantify p53 expression patterns in gynecological malignancies, using cell line controls</h3><p>The proof of concept behind the platform: a model trained on characterized cell lines, scoring p53 patterns against controls on the slide.</p><a href="https://doi.org/10.1016/j.labinv.2025.104770" target="_blank" rel="noopener">Read the abstract <span aria-hidden="true">→</span></a></article>
+      </div>
+      <div class="criteria" id="criteria">
+        <span class="j">Scoring criteria</span>
+        <h3>The call follows published p53 criteria.</h3>
+        <p>The software scores every case against established, published p53 criteria (K&ouml;bel 2016; Yemelyanova 2011) and reports the pattern: overexpression, wild-type, null, or borderline for the pathologist's review. The same references are printed at the bottom of every report.</p>
+        <h4>References</h4>
+        <ol>
+          <li>K&ouml;bel M, Piskorz AM, Lee S, Lui S, LePage C, Marass F, Rosenfeld N, Mes Masson AM, Brenton JD. Optimized p53 immunohistochemistry is an accurate predictor of TP53 mutation in ovarian carcinoma. J Pathol Clin Res. 2016;2(4):247&ndash;258. <a href="https://doi.org/10.1002/cjp2.53" target="_blank" rel="noopener">doi:10.1002/cjp2.53</a></li>
+          <li>Yemelyanova A, Vang R, Kshirsagar M, Lu D, Marks MA, Shih IeM, Kurman RJ. Immunohistochemical staining patterns of p53 can serve as a surrogate marker for TP53 mutations in ovarian carcinoma: an immunohistochemical and nucleotide sequencing analysis. Mod Pathol. 2011;24(9):1248&ndash;1253. <a href="https://doi.org/10.1038/modpathol.2011.85" target="_blank" rel="noopener">doi:10.1038/modpathol.2011.85</a></li>
+          <li>K&ouml;bel M, Ronnett BM, Singh N, Soslow RA, Gilks CB, McCluggage WG. Interpretation of p53 immunohistochemistry in endometrial carcinomas: toward increased reproducibility. Int J Gynecol Pathol. 2019;38 Suppl 1:S123&ndash;S131. <a href="https://doi.org/10.1097/PGP.0000000000000488" target="_blank" rel="noopener">doi:10.1097/PGP.0000000000000488</a></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="band next" aria-labelledby="h2n">
+    <div class="inner">
+      <div><h2 id="h2n">Try it on your own slides.</h2><p>A short pilot with your p53 cases, read side by side with your pathologists.</p></div>
+      <div class="links"><a class="btn btn-primary" href="pilot.html">Start a pilot <span aria-hidden="true">→</span></a><a class="btn btn-quiet" href="pilot.html#faq">Read the FAQ</a></div>
+    </div>
+  </section>
+</main>
+<footer class="band">
+  <div class="inner">
+    <div class="fcol"><strong>Research use only — not for use in diagnostic procedures.</strong><span>PCI · 7505 Fannin St, 640B · Houston, TX 77054</span></div>
+    <div class="fcol links"><a href="mailto:support@pcibio.com">support@pcibio.com</a><a href="https://www.linkedin.com/company/precision-cellular-immunology/posts/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.pcibio.com" target="_blank" rel="noopener">pcibio.com</a><a href="privacy.html">Privacy &amp; terms</a></div>
+  </div>
+</footer>
+<script>
+  // Opening a page from the menu starts at its top, not where the previous page was scrolled to.
+  (function () {
+    try { if ("scrollRestoration" in history) history.scrollRestoration = "manual"; } catch (e) {}
+    function toTop() { if (!location.hash) window.scrollTo(0, 0); }
+    toTop(); window.addEventListener("pageshow", toTop);
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{
+ "total": 80.65,
+ "chapters": [
+  {
+   "t": 0.0,
+   "label": "Title",
+   "step": null
+  },
+  {
+   "t": 5.2,
+   "label": "Why the controls are on the glass",
+   "step": null
+  },
+  {
+   "t": 9.8,
+   "label": "Sign in",
+   "step": null
+  },
+  {
+   "t": 15.87,
+   "label": "New case",
+   "step": null
+  },
+  {
+   "t": 23.37,
+   "label": "Set-up: H&E, control lines, tumor region",
+   "step": null
+  },
+  {
+   "t": 39.87,
+   "label": "Run",
+   "step": null
+  },
+  {
+   "t": 44.0,
+   "label": "Step 1 \u00b7 Look at the slides",
+   "step": 1
+  },
+  {
+   "t": 51.47,
+   "label": "Step 2 \u00b7 Check the call",
+   "step": 2
+  },
+  {
+   "t": 54.04,
+   "label": "Step 3 \u00b7 Mark an area",
+   "step": 3
+  },
+  {
+   "t": 62.41,
+   "label": "Step 4 \u00b7 Review the report",
+   "step": 4
+  },
+  {
+   "t": 68.51,
+   "label": "Step 5 \u00b7 Sign",
+   "step": 5
+  },
+  {
+   "t": 73.05,
+   "label": "The report",
+   "step": null
+  }
+ ]
+}

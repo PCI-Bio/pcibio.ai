@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>PCI-AI Education · AI-assisted biomarker assessment</title>
+<meta name="description" content="How machine learning turns manual slide scoring into consistent, quantitative measurement, and what that means for reproducibility across laboratories and trials.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PCI-AI">
+<meta property="og:title" content="PCI-AI Education · AI-assisted biomarker assessment">
+<meta property="og:description" content="How machine learning turns manual slide scoring into consistent, quantitative measurement, and what that means for reproducibility across laboratories and trials.">
+<meta property="og:url" content="https://pcibio.ai/learn-ai">
+<meta property="og:image" content="https://pcibio.ai/img/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b2e5f">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="site.css">
+<style>:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); } [hidden] { display: none !important; }</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav band">
+  <div class="bar">
+    <a class="logo" href="./" aria-label="PCI-AI home">
+      <img src="img/logo-ai-mark.svg" alt="" width="36" height="36">
+      <span class="wm">PCI<span class="ai"> - AI</span></span>
+    </a>
+    <nav aria-label="Site">
+      <a href="./">Overview</a>
+      <a href="platform.html">Platform</a>
+      <a href="trust.html">Safety &amp; data</a>
+      <a href="education.html" aria-current="page">Education</a>
+      <a href="pilot.html#faq">FAQ</a>
+      <a class="cta" href="pilot.html">Start a pilot</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="band white pagehead" aria-labelledby="h1">
+    <div class="inner">
+      <span class="eyebrow"><a href="education.html">Education</a> · IHC biomarker series · 04</span>
+      <h1 id="h1">AI-assisted biomarker assessment.</h1>
+      <p class="lede">How machine learning turns manual slide scoring into consistent, quantitative measurement, and what that means for reproducibility across laboratories and clinical trials.</p>
+      <div class="objectives">
+        <span class="k">Learning objectives</span>
+        <ul>
+          <li>Understand what problem AI-assisted scoring addresses in manual IHC interpretation</li>
+          <li>Recognise how an algorithm produces a quantitative score from a whole-slide image</li>
+          <li>Understand why standardization across sites matters for clinical-trial data</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <nav class="subnav" aria-label="Sections of this module"><div class="inner"><a href="#s1"><span>01</span>The problem AI is solving</a><a href="#s2"><span>02</span>What AI-assisted assessment does</a><a href="#s3"><span>03</span>Why standardization matters</a><a href="#s4"><span>04</span>Where this is headed</a></div></nav>
+
+  <section class="band tint" aria-label="Module content">
+    <div class="inner">
+      <div class="edu-body">
+        <article id="s1">
+          <span class="secnum">Section 01</span>
+          <h2>The problem AI is solving</h2>
+          <p>Manual IHC interpretation, a pathologist looking at a stained slide and estimating what share of cells stain positive and how strongly, has been the standard for decades. It works, but it has a known limitation: it is inherently subjective.</p>
+          <p>That subjectivity has clinical consequences. <dfn tabindex="0" data-tip="Disagreement between two pathologists interpreting the same slide, a known limitation of manual IHC scoring">Inter-observer variability</dfn> is a documented feature of manual IHC, not an edge case. For biomarkers where a scoring threshold decides treatment eligibility (HER2 for targeted therapy, MMR for immunotherapy, PD-L1 for checkpoint blockade) the inconsistency affects which patients receive which treatment. The same pathologist can also score the same slide differently on two days.</p>
+          <p>Scale adds a third constraint. A single <dfn tabindex="0" data-tip="A digital scan of a whole glass slide at high resolution, viewable at any magnification on a computer">whole-slide image</dfn> can contain millions of cells. Manual scoring estimates from a representative sample rather than every cell, a practical necessity that adds sampling variability on top of observer variability. The more heterogeneous the tumor, the more that matters.</p>
+        </article>
+
+        <article id="s2">
+          <span class="secnum">Section 02</span>
+          <h2>What AI-assisted assessment does</h2>
+          <p>Machine learning lets an algorithm learn patterns from annotated data and apply them to new images. In <dfn tabindex="0" data-tip="Converting glass slides into high-resolution digital images that can be viewed, shared and analysed computationally">digital pathology</dfn> that enables automated image analysis: the algorithm scans the whole digitised slide, finds individual cells, classifies each by staining intensity, and produces a quantitative score over the full section rather than a sample, in a fraction of the time.</p>
+          <p>A published comparison between manual analysis and one such tool, IHC Profiler, reported an 88.6 % match rate, which shows that automated scoring can align closely with expert interpretation while being far more consistent across repeated runs and laboratories.</p>
+          <div class="two">
+            <div class="icard"><h3>Manual scoring</h3><p>Estimate · observer-dependent</p><ul><li><span>1</span><span>The pathologist scans a representative sample of cells</span></li><li><span>2</span><span>Estimates staining intensity and the share of positive cells</span></li><li><span>3</span><span>Records a score from trained visual judgement</span></li></ul></div>
+            <div class="icard"><h3>AI-assisted scoring</h3><p>Quantitative · consistent</p><ul><li><span>1</span><span>The algorithm scans the whole slide at cell level</span></li><li><span>2</span><span>Classifies every cell by staining intensity</span></li><li><span>3</span><span>Outputs a quantitative score from the full section</span></li></ul></div>
+          </div>
+          <div class="note"><b>Assistant, not replacement.</b> Regulatory-approved AI diagnostic tools are designated <dfn tabindex="0" data-tip="AI designed to support and augment a pathologist's interpretation rather than replace it">assistive</dfn>: they provide a score as input to the pathologist's review, not an independent diagnosis. The pathologist reviews the output, applies clinical context and makes the final call. That is a deliberate design choice, not a temporary limitation. The PCI-AI reading room is built the same way: the pathologist reviews, edits the summary and signs.</div>
+        </article>
+
+        <article id="s3">
+          <span class="secnum">Section 03</span>
+          <h2>Why standardization matters</h2>
+          <p>One of the biggest advantages of <dfn tabindex="0" data-tip="A numerical score assigned by a validated model from patterns learned on annotated slides">algorithmic scoring</dfn> is reproducibility across sites. A manual score from one laboratory may not be comparable with one from another, even with the same antibody and protocol, because pathologists calibrate their visual estimates differently. A validated model applies the same criteria regardless of who runs it or where.</p>
+          <p>That matters most in clinical trials, where scores from patients at different institutions must be directly comparable for the data to be interpretable. It also matters for emerging biomarkers whose thresholds are still being set: consistent measurement is what makes the evidence reliable.</p>
+          <div class="sec">
+            <div><b>Consistent across observers</b><span>The same criteria applied to every slide, every time, removing reader-to-reader variation in how intensity is judged.</span></div>
+            <div><b>Full tissue coverage</b><span>Every cell in the section is scored rather than a sample, which reduces sampling bias in heterogeneous tumors.</span></div>
+            <div><b>Reproducible across sites</b><span>A validated model gives the same output at any participating laboratory, so cross-site data compare directly.</span></div>
+          </div>
+        </article>
+
+        <article id="s4">
+          <span class="secnum">Section 04</span>
+          <h2>Where this is headed</h2>
+          <p>The next generation of biomarkers may be defined by AI-first assays, tests designed without a manual-scoring equivalent. Rather than automating an existing score, such systems would find patterns that visual inspection cannot: spatial relationships between cell types, subtle texture, microenvironment signatures, and links between morphology and treatment response or survival.</p>
+          <p>Those capabilities rest on the same infrastructure as today's assisted scoring: whole-slide imaging, standardized tissue preparation and validated antibody staining. The direction is more computation in the standard pathology workflow, not as a replacement for expertise but as a tool that widens what can be measured.</p>
+          <div class="note"><b>Reliable AI starts with a reliable stain.</b> A model trained to score a marker at a given intensity can only perform consistently if the stain itself is consistent run to run. PCI's control panels exist to meet that requirement, and the software on this site reads each slide against the controls carried on that same slide. <a href="https://www.pcibio.com/controls.html" target="_blank" rel="noopener">View control panels →</a></div>
+          <p class="sources"><b>Sources:</b> Current Oncology (2026): Machine Learning in Biomarker-Driven Precision Oncology: Automated IHC Scoring in Genitourinary Cancers · PMC (2022): Digital Pathology: New Initiative in Pathology · npj Precision Oncology (2025): Augmented Reality Microscopy to Bridge Trust Between AI and Pathologists · PMC (2014): IHC Profiler: Open Source Plugin for Quantitative Evaluation and Automated Scoring of IHC Images (the 88.6 % match rate) · The Lancet Digital Health (2025): Application of Artificial Intelligence and Digital Tools in Cancer Pathology.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band next" aria-labelledby="h2n">
+    <div class="inner">
+      <div><h2 id="h2n">Next: three real cases to read yourself.</h2><p>One per pattern. Make your call, then compare it with the software's read.</p></div>
+      <div class="links"><a class="btn btn-primary" href="learn-cases.html">Case studies <span aria-hidden="true">→</span></a><a class="btn btn-quiet" href="education.html#modules">All modules</a></div>
+    </div>
+  </section>
+</main>
+<footer class="band">
+  <div class="inner">
+    <div class="fcol"><strong>Research use only — not for use in diagnostic procedures.</strong><span>PCI · 7505 Fannin St, 640B · Houston, TX 77054</span></div>
+    <div class="fcol links"><a href="mailto:support@pcibio.com">support@pcibio.com</a><a href="https://www.linkedin.com/company/precision-cellular-immunology/posts/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.pcibio.com" target="_blank" rel="noopener">pcibio.com</a><a href="privacy.html">Privacy &amp; terms</a></div>
+  </div>
+</footer>
+<script>
+  (function () {
+    try { if ("scrollRestoration" in history) history.scrollRestoration = "manual"; } catch (e) {}
+    function toTop() { if (!location.hash) window.scrollTo(0, 0); }
+    toTop(); window.addEventListener("pageshow", toTop);
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PCI-AI Platform Sections</title>
+<meta name="description" content="p53 slides read against the control lines stained on the same glass. Every tumor nucleus graded, a one-page report the pathologist signs. Research use only.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PCI-AI">
+<meta property="og:title" content="PCI-AI">
+<meta property="og:description" content="p53 slides read against the control lines stained on the same glass. Every tumor nucleus graded, a one-page report the pathologist signs. Research use only.">
+<meta property="og:url" content="https://pcibio.ai/">
+<meta property="og:image" content="https://pcibio.ai/img/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b2e5f">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="site.css">
+
+<style>[hidden] { display: none !important; }</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav band">
+  <div class="bar">
+    <a class="logo" href="./" aria-label="PCI-AI home">
+      <img src="img/logo-ai-mark.svg" alt="" width="36" height="36">
+      <span class="wm">PCI<span class="ai"> - AI</span></span>
+    </a>
+    <nav aria-label="Site">
+      <a href="./" aria-current="page">Overview</a>
+      <a href="platform.html">Platform</a>
+      <a href="trust.html">Safety &amp; data</a>
+      <a href="education.html">Education</a>
+      <a href="pilot.html#faq">FAQ</a>
+      <a class="cta" href="pilot.html">Start a pilot</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- 1 · Hero: the three control lines on the slide, each with what its cells look like -->
+  <section class="band hero white" aria-labelledby="h1">
+    <div class="inner">
+      <div>
+        <span class="chip"><i></i>p53 TriControl · AI · research use</span>
+        <h1 id="h1">From stained slide to a scored p53 call.</h1>
+        <p class="lede">Every slide carries three control lines with known p53 staining. The software grades every tumor nucleus against them, and the pathologist reviews and signs.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="platform.html#demo">Watch the demo · 1:20 <span aria-hidden="true">→</span></a>
+          <a class="btn btn-quiet" href="#how">See how it works</a>
+          <a class="btn btn-quiet" href="sample-report/pci-p53-sample-report.pdf">Sample report</a>
+        </div>
+      </div>
+
+      <figure class="slide" style="margin:0" aria-label="The three control lines on a p53 slide, with a cell-level view of each">
+        <div class="slide-head"><span>On the slide</span><span>Cells at 40×</span></div>
+        <div class="glass">
+          <div class="disc"><img src="img/disc-oe.png" alt="Overexpression control line on the slide"><span class="spot" aria-hidden="true"></span></div>
+          <div class="disc"><img src="img/disc-wt.png" alt="Wild-type control line on the slide"><span class="spot" aria-hidden="true"></span></div>
+          <div class="disc"><img src="img/disc-null.png" alt="Null control line on the slide"><span class="spot" aria-hidden="true"></span></div>
+        </div>
+        <div class="callouts">
+          <div class="callout"><div class="box"><img src="img/zoom-oe.jpg" alt="Every nucleus stained dark brown"><div class="lab"><b><i style="background:var(--oe)"></i>Overexpression</b><span>Strong staining in nearly every nucleus</span></div></div></div>
+          <div class="callout"><div class="box"><img src="img/zoom-wt.jpg" alt="A mix of weak and moderate nuclear staining"><div class="lab"><b><i style="background:var(--wt)"></i>Wild-type</b><span>Weak to moderate, varying cell to cell</span></div></div></div>
+          <div class="callout"><div class="box"><img src="img/zoom-null.jpg" alt="Nuclei with no brown staining"><div class="lab"><b><i style="background:var(--null)"></i>Null</b><span>No staining in the nuclei</span></div></div></div>
+        </div>
+        <figcaption class="slide-foot">The three control lines, stained on the same glass as the patient's tissue.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2 · The problem -->
+  <section class="band tint" aria-labelledby="h2a">
+    <div class="inner">
+      <span class="eyebrow">Why it matters</span>
+      <h2 id="h2a">A p53 call depends on who reads the slide.</h2>
+      <p class="lede">p53 staining is one of the clearest signals in gynecologic pathology, when it is read the same way every time.</p>
+      <div class="stats">
+        <article class="stat">
+          <div class="big">~96<small>%</small></div>
+          <p class="says">of high-grade serous ovarian carcinomas carry a <strong>TP53 mutation</strong>.</p>
+          <div class="waffle" data-on="96" role="img" aria-label="96 of 100 dots filled"></div>
+          <div class="legend"><span><i style="background:var(--navy)"></i>TP53 mutated</span><span><i style="background:var(--navy-100)"></i>Not mutated</span></div>
+        </article>
+        <article class="stat">
+          <div class="big">~94<small>%</small></div>
+          <p class="says">of cases are classified correctly by <strong>p53 immunohistochemistry</strong> when the stain and the read follow an optimized protocol.</p>
+          <div class="waffle" data-on="94" role="img" aria-label="94 of 100 dots filled"></div>
+          <div class="legend"><span><i style="background:var(--navy)"></i>Pattern matches the mutation</span><span><i style="background:var(--navy-100)"></i>Does not</span></div>
+        </article>
+        <article class="stat">
+          <div class="big">0.61–0.67</div>
+          <p class="says">is the agreement (<strong>Fleiss κ</strong>) between readers of mixed experience scoring the same p53 slides. Moderate to substantial, short of reliable.</p>
+          <div class="scale">
+            <svg viewBox="0 0 420 70" role="img" aria-label="Agreement scale from 0 to 1 with the measured range 0.61 to 0.67 marked">
+              <rect x="10" y="24" width="400" height="12" rx="6" fill="#dbe6f5"/>
+              <rect x="254" y="20" width="24" height="20" rx="4" fill="#0b2e5f"/>
+              <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#64748b" text-anchor="middle">
+                <text x="10" y="58">0</text><text x="90" y="58">0.2</text><text x="170" y="58">0.4</text><text x="250" y="58">0.6</text><text x="330" y="58">0.8</text><text x="410" y="58">1</text>
+              </g>
+              <g font-family="IBM Plex Sans, sans-serif" font-size="11" fill="#45566b" text-anchor="middle">
+                <text x="210" y="13">moderate</text><text x="290" y="13">substantial</text><text x="370" y="13">almost perfect</text>
+              </g>
+            </svg>
+          </div>
+        </article>
+
+      </div>
+      <div class="adds">
+        <div><span class="eyebrow">What PCI adds</span><div class="big">3 <small>controls</small></div></div>
+        <p>On <strong>every slide</strong>, stained with the tissue, so each read is anchored to the same three reference patterns. Then <strong>every tumor nucleus</strong> is graded against them.</p>
+        <div class="minidiscs"><img src="img/zoom-oe.jpg" alt=""><img src="img/zoom-wt.jpg" alt=""><img src="img/zoom-null.jpg" alt=""></div>
+      </div>
+      <p class="sources">Sources: Cancer Genome Atlas Research Network, <i>Nature</i> 2011 (TP53 in high-grade serous carcinoma); Köbel et al., <i>J Pathol Clin Res</i> 2016 (optimized p53 IHC); Karathanasis &amp; Andersen, <i>Lab Invest</i> 106 (2026) 104770 (reader agreement).</p>
+    </div>
+  </section>
+
+  <!-- 3 · How it works -->
+  <section class="band white" id="how" aria-labelledby="h2b">
+    <div class="inner">
+      <span class="eyebrow">How it works</span>
+      <h2 id="h2b">Four steps, one case.</h2>
+      <p class="lede">The lab and the pathologist stay in charge of every step. The software does the counting. Or watch it: <a href="platform.html#demo">the whole read in 80 seconds</a>.</p>
+      <div class="how">
+        <ol class="steps" role="tablist" aria-label="Steps">
+          <li><button class="step" role="tab" id="tab1" aria-controls="p1" aria-selected="true"><span class="num">1</span><span><span class="t">Upload</span><span class="d">Add the H&amp;E and the p53 slide. The three control lines are already on the p53 slide.</span></span></button></li>
+          <li><button class="step" role="tab" id="tab2" aria-controls="p2" aria-selected="false"><span class="num">2</span><span><span class="t">Mark</span><span class="d">The lab confirms the three control lines. The pathologist marks the tumor region to score.</span></span></button></li>
+          <li><button class="step" role="tab" id="tab3" aria-controls="p3" aria-selected="false"><span class="num">3</span><span><span class="t">Analyze</span><span class="d">Every tumor nucleus inside the region is graded 0 to 3+ against the slide's own controls.</span></span></button></li>
+          <li><button class="step" role="tab" id="tab4" aria-controls="p4" aria-selected="false"><span class="num">4</span><span><span class="t">Review &amp; sign</span><span class="d">A one-page report. The pathologist edits the summary, then signs.</span></span></button></li>
+        </ol>
+
+        <div class="stage">
+          <div class="panel" id="p1" role="tabpanel" aria-labelledby="tab1">
+            <div class="drop">
+              <div class="glass-slides">
+                <div class="gslide"><div class="pic"><img src="img/he-whole.jpg" alt="H&amp;E slide"></div><div class="meta"><b><i style="background:#c2478f"></i>H&amp;E</b><span class="ok">✓ Ready</span></div></div>
+                <div class="gslide"><div class="pic"><img src="img/ihc-whole.jpg" alt="p53 IHC slide with the three control lines at the top"></div><div class="meta"><b><i style="background:#9a6a2f"></i>p53 IHC</b><span class="ok">✓ Ready</span></div></div>
+              </div>
+              <a class="btn btn-primary" href="#how" aria-label="Upload slides (illustration)">Upload slides</a>
+              <p class="hint">Whole-slide images from the scanner. The control lines sit at the top of the p53 slide.</p>
+            </div>
+          </div>
+
+          <div class="panel" id="p2" role="tabpanel" aria-labelledby="tab2" hidden>
+            <div class="marked">
+              <div class="mcard">
+                <h4>Control lines · confirmed by the lab</h4>
+                <div class="mrow">
+                  <figure style="--c:var(--oe)"><div class="ring"><img src="img/disc-oe.png" alt="Overexpression control, marked red"></div><figcaption>OE · red</figcaption></figure>
+                  <figure style="--c:var(--wt)"><div class="ring"><img src="img/disc-wt.png" alt="Wild-type control, marked green"></div><figcaption>WT · green</figcaption></figure>
+                  <figure style="--c:var(--null)"><div class="ring"><img src="img/disc-null.png" alt="Null control, marked blue"></div><figcaption>Null · blue</figcaption></figure>
+                </div>
+              </div>
+              <div class="mcard">
+                <h4>Tumor region · marked by the pathologist</h4>
+                <div class="tumorbox"><img src="img/ihc-tumor-field.jpg" alt="Tumor on the p53 slide with a marked region"><span class="sel" aria-hidden="true"></span><span class="tag">Tumor region</span></div>
+              </div>
+            </div>
+            <p class="caption">One click per control line, one box over the tumor.</p>
+          </div>
+
+          <div class="panel" id="p3" role="tabpanel" aria-labelledby="tab3" hidden>
+            <div class="result">
+              <div class="call"><small>p53 pattern</small><b>Overexpression (abnormal pattern)</b></div>
+              <div class="share">94 %<small>of tumor nuclei strong (2+ or 3+)</small></div>
+            </div>
+            <div class="pair">
+              <figure><img src="img/pci-p53-sample-report-field-ihc.jpg" alt="p53-stained tumor field"><figcaption>The tumor as stained</figcaption></figure>
+              <figure><img src="img/pci-p53-sample-report-field-ai.jpg" alt="The same field with one coloured dot per graded nucleus"><figcaption>One dot per tumor nucleus, coloured by grade</figcaption></figure>
+            </div>
+            <div class="legend" style="justify-content:center"><span><i style="background:var(--g0)"></i>0</span><span><i style="background:var(--g1)"></i>1+</span><span><i style="background:var(--g2)"></i>2+</span><span><i style="background:var(--g3)"></i>3+</span></div>
+          </div>
+
+          <div class="panel" id="p4" role="tabpanel" aria-labelledby="tab4" hidden>
+            <div class="paper"><img src="img/sample-report.jpg" alt="One-page p53 sample report"><span class="signed">✓ Signed</span></div>
+            <p class="caption"><a href="sample-report/pci-p53-sample-report.pdf">Open the sample report (PDF)</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · Why TriControl -->
+  <section class="band tint" aria-labelledby="h2c">
+    <div class="inner">
+      <span class="eyebrow">Why TriControl</span>
+      <h2 id="h2c">A grade scale from the slide itself.</h2>
+      <p class="lede">The controls are cut and stained with the tissue, on the same glass and in the same run.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="art art-trio"><img src="img/zoom-oe.jpg" alt=""><img src="img/zoom-wt.jpg" alt=""><img src="img/zoom-null.jpg" alt=""></div>
+          <div class="body"><span class="k">Controls</span><h3>Calibrated on every slide</h3><p>Three control lines of known p53 staining go through the stain with the tissue and set that slide's grade scale.</p></div>
+        </article>
+        <article class="card">
+          <div class="art art-region"><img src="img/ihc-tumor-field.jpg" alt=""><span class="sel" aria-hidden="true"></span></div>
+          <div class="body"><span class="k">People</span><h3>People place the regions</h3><p>The lab confirms the controls and the pathologist marks the tumor. The software never decides where to look.</p></div>
+        </article>
+        <article class="card">
+          <div class="art art-dots"><img src="img/pci-p53-sample-report-field-ai.jpg" alt=""><span class="lens"><span><i style="background:var(--g0)"></i>0</span><span><i style="background:var(--g1)"></i>1+</span><span><i style="background:var(--g2)"></i>2+</span><span><i style="background:var(--g3)"></i>3+</span></span></div>
+          <div class="body"><span class="k">Nuclei</span><h3>Every nucleus, not a glance</h3><p>Tens of thousands of tumor nuclei graded per case, each on the slide's own scale, with a map of where they are.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · Products -->
+  <section class="band white" id="products" aria-labelledby="h2d">
+    <div class="inner">
+      <span class="eyebrow">Products</span>
+      <h2 id="h2d">What you can use today, and what comes next.</h2>
+      <div class="products">
+        <article class="prod">
+          <figure class="prodslide"><img src="img/tricontrol-slide-3d.png" alt="A TriControl p53 slide: label, three control cores and a stained section"><figcaption>Illustration</figcaption></figure>
+          <div><span class="where">Laboratory controls</span><h3>TriControl FFPE control blocks <span class="pill lab">Physical controls</span></h3><p>Cell-line control blocks to cut and stain alongside patient tissue. The same controls the software reads on every slide.</p></div>
+          <a class="btn btn-quiet" href="https://www.pcibio.com" target="_blank" rel="noopener">Visit pcibio.com <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="prod muted">
+          <div class="ba"><div class="ph" aria-hidden="true"><svg width="44" height="44" viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="4 4"/></svg></div><span class="arrow" aria-hidden="true">→</span><div class="ph" aria-hidden="true"><svg width="44" height="44" viewBox="0 0 44 44"><g fill="currentColor"><circle cx="14" cy="14" r="4"/><circle cx="30" cy="16" r="4"/><circle cx="20" cy="28" r="4"/><circle cx="32" cy="30" r="4"/></g></svg></div></div>
+          <div><span class="where">Mismatch repair</span><h3>MMR <span class="pill soon">Coming soon</span></h3><p>The same approach for the mismatch-repair proteins: controls on the slide, every tumor nucleus graded, a report to sign.</p><p class="markers">MLH1 · PMS2 · MSH2 · MSH6</p></div>
+          <span class="btn" aria-disabled="true">Sample report · coming</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="band next" aria-labelledby="h2n">
+    <div class="inner">
+      <div><h2 id="h2n">See a case from start to finish.</h2><p>Walk through the pathologist&#8217;s reading room and read the sample report.</p></div>
+      <div class="links"><a class="btn btn-primary" href="platform.html#demo">Watch the demo <span aria-hidden="true">→</span></a><a class="btn btn-quiet" href="platform.html">Explore the platform</a><a class="btn btn-quiet" href="pilot.html">Start a pilot</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="band">
+  <div class="inner">
+    <div class="fcol"><strong>Research use only — not for use in diagnostic procedures.</strong><span>PCI · 7505 Fannin St, 640B · Houston, TX 77054</span></div>
+    <div class="fcol links"><a href="mailto:support@pcibio.com">support@pcibio.com</a><a href="https://www.linkedin.com/company/precision-cellular-immunology/posts/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.pcibio.com" target="_blank" rel="noopener">pcibio.com</a><a href="privacy.html">Privacy &amp; terms</a></div>
+  </div>
+</footer>
+
+<script>
+  // Dot grids for the stat tiles (one dot per patient in 100).
+  document.querySelectorAll('.waffle').forEach(function (w) {
+    var on = +w.dataset.on, html = '';
+    for (var i = 0; i < 100; i++) html += i < on ? '<i class="on"></i>' : '<i></i>';
+    w.innerHTML = html;
+  });
+  // Step tabs: click, hover (on a mouse) or arrow keys swap the panel.
+  (function () {
+    var tabs = [].slice.call(document.querySelectorAll('.step'));
+    function show(t) {
+      tabs.forEach(function (x) {
+        var on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1;
+        document.getElementById(x.getAttribute('aria-controls')).hidden = !on;
+      });
+    }
+    var hover = window.matchMedia && window.matchMedia('(hover: hover)').matches;
+    tabs.forEach(function (t, i) {
+      t.tabIndex = i === 0 ? 0 : -1;
+      t.addEventListener('click', function () { show(t); });
+      if (hover) t.addEventListener('mouseenter', function () { show(t); });
+      t.addEventListener('keydown', function (e) {
+        var d = (e.key === 'ArrowDown' || e.key === 'ArrowRight') ? 1 : (e.key === 'ArrowUp' || e.key === 'ArrowLeft') ? -1 : 0;
+        if (!d) return; e.preventDefault(); var n = tabs[(i + d + tabs.length) % tabs.length]; show(n); n.focus();
+      });
+    });
+  })();
+</script>
+<script>
+  // Opening a page from the menu starts at its top, not where the previous page was scrolled to.
+  (function () {
+    try { if ("scrollRestoration" in history) history.scrollRestoration = "manual"; } catch (e) {}
+    function toTop() { if (!location.hash) window.scrollTo(0, 0); }
+    toTop(); window.addEventListener("pageshow", toTop);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>PCI-AI Pilot</title>
+<meta name="description" content="How a pilot works, what we need from your laboratory, and the questions labs ask first.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PCI-AI">
+<meta property="og:title" content="PCI-AI Pilot">
+<meta property="og:description" content="How a pilot works, what we need from your laboratory, and the questions labs ask first.">
+<meta property="og:url" content="https://pcibio.ai/pilot">
+<meta property="og:image" content="https://pcibio.ai/img/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b2e5f">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="site.css">
+<style>:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); } [hidden] { display: none !important; }</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav band">
+  <div class="bar">
+    <a class="logo" href="./" aria-label="PCI-AI home">
+      <img src="img/logo-ai-mark.svg" alt="" width="36" height="36">
+      <span class="wm">PCI<span class="ai"> - AI</span></span>
+    </a>
+    <nav aria-label="Site">
+      <a href="./">Overview</a>
+      <a href="platform.html">Platform</a>
+      <a href="trust.html">Safety &amp; data</a>
+      <a href="education.html">Education</a>
+      <a href="pilot.html#faq">FAQ</a>
+      <a class="cta" href="pilot.html" aria-current="page">Start a pilot</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="band white pagehead" aria-labelledby="h1">
+    <div class="inner">
+      <span class="eyebrow">Start a pilot</span>
+      <h1 id="h1">Run your own slides.</h1>
+      <p class="lede">A pilot puts your p53 cases through the platform, next to your pathologists' own reads.</p>
+    </div>
+  </section>
+
+  <section class="band tint" aria-labelledby="h2pl">
+    <div class="inner">
+      <span class="eyebrow">How a pilot works</span>
+      <h2 id="h2pl">Four steps, a few weeks.</h2>
+      <div class="pilot">
+        <div class="pilotleft">
+        <figure class="prodslide wide"><img src="img/tricontrol-slide-3d.png" alt="A TriControl p53 slide: label, three control cores and a stained section"><figcaption>TriControl&trade; p53 slide · illustration</figcaption></figure>
+        <ol class="steps-p">
+          <li><div><b>Choose the cases</b><span>A set of p53 cases you already know, each with the three control lines on the slide. We can supply the control blocks.</span></div></li>
+          <li><div><b>Set up your lab</b><span>Your histotechnologists and pathologists get accounts. Slides upload from your scanner.</span></div></li>
+          <li><div><b>Read side by side</b><span>Your team marks the controls and the tumor, the software grades the nuclei, and your pathologists compare with their own reads.</span></div></li>
+          <li><div><b>Review together</b><span>We go through the agreement case by case, and what would help your workflow.</span></div></li>
+        </ol>
+        </div>
+        <form class="req" id="req" novalidate>
+          <label for="f-name">Name<input id="f-name" name="name" autocomplete="name" required></label>
+          <label for="f-email">Work email<input id="f-email" name="email" type="email" autocomplete="email" required></label>
+          <label for="f-org">Laboratory or institution<input id="f-org" name="org" autocomplete="organization"></label>
+          <label for="f-role">Role<select id="f-role" name="role"><option>Pathologist</option><option>Laboratory director</option><option>Histotechnologist</option><option>Researcher</option><option>Other</option></select></label>
+          <label for="f-vol">p53 cases per month<select id="f-vol" name="vol"><option>Fewer than 20</option><option>20 to 100</option><option>More than 100</option></select></label>
+          <label for="f-scan">Scanner<input id="f-scan" name="scanner" placeholder="Make and model"></label>
+          <label class="wide" for="f-notes">Anything we should know<textarea id="f-notes" name="notes"></textarea></label>
+          <button class="btn btn-primary" type="submit">Request a pilot</button>
+          <p class="done" id="f-done" hidden>Your email app should open with the request filled in. If it does not, write to <a href="mailto:support@pcibio.com">support@pcibio.com</a> and we will reply by email.</p>
+          <p class="fine">Research use only. We use your details only to reply about the pilot.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="band white" id="faq" aria-labelledby="h2f">
+    <div class="inner">
+      <span class="eyebrow">FAQ</span>
+      <h2 id="h2f">Questions labs ask first.</h2>
+      <div class="faq">
+        <details><summary>What does the software do?</summary><p>It grades every tumor nucleus on a p53 slide from 0 to 3+ against the three control lines stained on the same slide, scores it against established, published p53 criteria and reports the pattern: wild-type, overexpression, null, or borderline for the pathologist's review. A pathologist reviews the result and signs.</p></details>
+        <details><summary>Which stains does it read?</summary><p>p53 today. Mismatch repair (MLH1, PMS2, MSH2, MSH6) is in development.</p></details>
+        <details><summary>Which slides and scanners work?</summary><p>Aperio SVS and TIFF whole-slide images today. Other scanner formats on request.</p></details>
+        <details><summary>Who places the regions?</summary><p>The laboratory confirms the three control lines on the slide. The pathologist marks the tumor region to score. The software suggests both; a person confirms them.</p></details>
+        <details><summary>How long does a case take?</summary><p>Most cases are analysed in about half an hour, and three in four in under 45 minutes, once the slides are uploaded and the regions marked. The case shows as ready for review when it is done.</p></details>
+        <details><summary>What happens if the slide isn't good enough?</summary><p>The case gets no call and one plain sentence saying why: the control lines didn't stain, there were too few tumor nuclei, or the two slides couldn't be aligned.</p></details>
+        <details><summary>Do I need PCI's control blocks?</summary><p>The analysis reads three control lines with known p53 staining on the slide. PCI's TriControl FFPE blocks provide them, cut and stained with the tissue.</p></details>
+        <details><summary>Can it be used for diagnosis?</summary><p>No. It is for research use only and not for use in diagnostic procedures.</p></details>
+        <details><summary>Where does patient data go?</summary><p>Nowhere it doesn't need to. Slide labels are removed at upload, the requisition takes a case code instead of a name, and each laboratory sees only its own cases.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="band">
+  <div class="inner">
+    <div class="fcol"><strong>Research use only — not for use in diagnostic procedures.</strong><span>PCI · 7505 Fannin St, 640B · Houston, TX 77054</span></div>
+    <div class="fcol links"><a href="mailto:support@pcibio.com">support@pcibio.com</a><a href="https://www.linkedin.com/company/precision-cellular-immunology/posts/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.pcibio.com" target="_blank" rel="noopener">pcibio.com</a><a href="privacy.html">Privacy &amp; terms</a></div>
+  </div>
+</footer>
+<script>
+  document.getElementById("req").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var g = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ""; };
+    var body = ["Name: " + g("f-name"), "Work email: " + g("f-email"), "Laboratory or institution: " + g("f-org"), "Role: " + g("f-role"),
+                "p53 cases per month: " + g("f-vol"), "Scanner: " + g("f-scan"), "", g("f-notes")].join("\n");
+    location.href = "mailto:support@pcibio.com?subject=" + encodeURIComponent("Pilot request" + (g("f-org") ? " · " + g("f-org") : "")) + "&body=" + encodeURIComponent(body);
+    document.getElementById("f-done").hidden = false;
+  });
+  if (location.hash === "#faq") { var d = document.querySelector(".faq details"); if (d) d.open = true; }
+</script>
+<script>
+  // Opening a page from the menu starts at its top, not where the previous page was scrolled to.
+  (function () {
+    try { if ("scrollRestoration" in history) history.scrollRestoration = "manual"; } catch (e) {}
+    function toTop() { if (!location.hash) window.scrollTo(0, 0); }
+    toTop(); window.addEventListener("pageshow", toTop);
+  })();
+</script>
+</body>
+</html>

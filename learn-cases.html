@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>PCI-AI Education · Case studies</title>
+<meta name="description" content="Three real p53 cases, one per pattern. Read the slides, make your call, then see what the software read and what the pathologist checks.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PCI-AI">
+<meta property="og:title" content="PCI-AI Education · Case studies">
+<meta property="og:description" content="Three real p53 cases, one per pattern. Read the slides, make your call, then see what the software read and what the pathologist checks.">
+<meta property="og:url" content="https://pcibio.ai/learn-cases">
+<meta property="og:image" content="https://pcibio.ai/img/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b2e5f">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="site.css">
+<style>:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); } [hidden] { display: none !important; }</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav band">
+  <div class="bar">
+    <a class="logo" href="./" aria-label="PCI-AI home">
+      <img src="img/logo-ai-mark.svg" alt="" width="36" height="36">
+      <span class="wm">PCI<span class="ai"> - AI</span></span>
+    </a>
+    <nav aria-label="Site">
+      <a href="./">Overview</a>
+      <a href="platform.html">Platform</a>
+      <a href="trust.html">Safety &amp; data</a>
+      <a href="education.html" aria-current="page">Education</a>
+      <a href="pilot.html#faq">FAQ</a>
+      <a class="cta" href="pilot.html">Start a pilot</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="band white pagehead" aria-labelledby="h1">
+    <div class="inner">
+      <span class="eyebrow"><a href="education.html">Education</a> · IHC biomarker series · 05</span>
+      <h1 id="h1">Case studies: three patterns, three real cases.</h1>
+      <p class="lede">One case for each p53 pattern, read the way a pathologist reads them: the H&amp;E, the p53 slide with its control lines, the tumor at high magnification. Make your call before you open the answer.</p>
+      <div class="objectives">
+        <span class="k">How to use these cases</span>
+        <ul>
+          <li>Look at the slides and the tumor field, then pick the pattern you see</li>
+          <li>Compare your call with what the software read, nucleus by nucleus</li>
+          <li>Note what the pathologist checks before signing each one</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <nav class="subnav" aria-label="Cases"><div class="inner"><a href="#case1"><span>01</span>Case 1</a><a href="#case2"><span>02</span>Case 2</a><a href="#case3"><span>03</span>Case 3</a></div></nav>
+
+  <section class="band tint" aria-label="Cases">
+    <div class="inner">
+      <div class="edu-body cases">
+
+        <article id="case1" class="case" data-answer="oe">
+          <span class="secnum">Case 1</span>
+          <h2>A gynecologic tumor, H&amp;E and p53.</h2>
+          <p>The laboratory stained the p53 slide with the three control lines on the same glass. Look at the whole slides first, then at the tumor nuclei.</p>
+          <div class="case-slides">
+            <figure><img src="img/cases/oe-he.jpg" alt="Whole H&E slide of case 1" loading="lazy"><figcaption><b>H&amp;E</b>The tissue, for orientation.</figcaption></figure>
+            <figure><img src="img/cases/oe-ihc.jpg" alt="Whole p53 slide of case 1 with the three control lines at the top" loading="lazy"><figcaption><b>p53 IHC</b>The three control lines sit at the top of the slide.</figcaption></figure>
+            <figure class="wide"><img src="img/cases/oe-field.jpg" alt="Tumor nuclei of case 1 at high magnification on the p53 slide" loading="lazy"><figcaption><b>Tumor nuclei, high magnification</b>Four fields from the tumor region of the p53 slide.</figcaption></figure>
+          </div>
+          <div class="quiz" aria-label="Your call for case 1">
+            <span class="k">Your call</span>
+            <div class="q"><p class="qq">Which p53 pattern is this?</p><div class="opts"><button type="button" class="opt" data-yes="0">Wild-type</button><button type="button" class="opt" data-yes="0">Null</button><button type="button" class="opt" data-yes="1">Overexpression</button></div><p class="fb" hidden></p></div>
+          </div>
+          <div class="reveal" hidden>
+            <h3>What the software read</h3>
+            <div class="readout">
+              <figure><img src="img/cases/oe-graded.jpg" alt="Every graded tumor nucleus of case 1 drawn as a dot coloured by grade" loading="lazy"><figcaption>Every tumor nucleus it graded, 65,816 of them, as a dot coloured by grade: dark brown 3+, brown 2+, tan 1+, grey 0. The same case as the sample report.</figcaption></figure>
+              <div class="grades">
+                <div class="call abnormal">Overexpression (abnormal pattern)</div>
+                <table class="edu-table"><tr><th>Grade</th><th>Share of tumor nuclei</th></tr><tr><td><i class="g3"></i>3+ strong</td><td>84 %</td></tr><tr><td><i class="g2"></i>2+ moderate</td><td>10 %</td></tr><tr><td><i class="g1"></i>1+ weak</td><td>5 %</td></tr><tr><td><i class="g0"></i>0 unstained</td><td>1 %</td></tr></table>
+                <p>Strong staining in more than nine of every ten tumor nuclei, with a thin margin of moderate and weak ones, read against the overexpression control line on the same slide. The control lines stained as expected, so the grades can be trusted.</p>
+              </div>
+            </div>
+            <h3>What the pathologist checks</h3>
+            <ul class="checks">
+              <li>The strong staining covers the tumor, not just one hot spot. The dot map shows it does.</li>
+              <li>The wild-type control line is clearly lighter than the tumor, so this is not a dark run making a wild-type look strong.</li>
+              <li>Non-tumor cells in the field are unstained or weak, as expected.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article id="case2" class="case" data-answer="wt">
+          <span class="secnum">Case 2</span>
+          <h2>Another gynecologic tumor, same two stains.</h2>
+          <p>This one looks different from the first at a glance. Take your time on the tumor nuclei before you decide.</p>
+          <div class="case-slides">
+            <figure><img src="img/cases/wt-he.jpg" alt="Whole H&E slide of case 2" loading="lazy"><figcaption><b>H&amp;E</b></figcaption></figure>
+            <figure><img src="img/cases/wt-ihc.jpg" alt="Whole p53 slide of case 2 with the three control lines at the top" loading="lazy"><figcaption><b>p53 IHC</b>Control lines at the top.</figcaption></figure>
+            <figure class="wide"><img src="img/cases/wt-field.jpg" alt="Tumor nuclei of case 2 at high magnification on the p53 slide" loading="lazy"><figcaption><b>Tumor nuclei, high magnification</b>Four fields from the tumor region.</figcaption></figure>
+          </div>
+          <div class="quiz" aria-label="Your call for case 2">
+            <span class="k">Your call</span>
+            <div class="q"><p class="qq">Which p53 pattern is this?</p><div class="opts"><button type="button" class="opt" data-yes="1">Wild-type</button><button type="button" class="opt" data-yes="0">Null</button><button type="button" class="opt" data-yes="0">Overexpression</button></div><p class="fb" hidden></p></div>
+          </div>
+          <div class="reveal" hidden>
+            <h3>What the software read</h3>
+            <div class="readout">
+              <figure><img src="img/cases/wt-graded.jpg" alt="Every graded tumor nucleus of case 2 drawn as a dot coloured by grade" loading="lazy"><figcaption>Grey dots dominate, with scattered tan and brown, and a few dark clusters at the edges.</figcaption></figure>
+              <div class="grades">
+                <div class="call normal">Wild-type</div>
+                <table class="edu-table"><tr><th>Grade</th><th>Share of tumor nuclei</th></tr><tr><td><i class="g3"></i>3+ strong</td><td>4 %</td></tr><tr><td><i class="g2"></i>2+ moderate</td><td>6 %</td></tr><tr><td><i class="g1"></i>1+ weak</td><td>15 %</td></tr><tr><td><i class="g0"></i>0 unstained</td><td>75 %</td></tr></table>
+                <p>Variable intensity from cell to cell, most nuclei unstained, some weak or moderate, a few strong. That mix is the wild-type pattern. On this slide the software also noted that the wild-type control line had stained faintly, and said so on the result, which is exactly the kind of flag the pathologist wants to see.</p>
+              </div>
+            </div>
+            <h3>What the pathologist checks</h3>
+            <ul class="checks">
+              <li>The strong nuclei are scattered or sit in small clusters, not across the whole tumor. If they covered most of it, this would be an overexpression call.</li>
+              <li>The unstained majority is not a failed stain: the control lines and the stained minority prove the stain worked.</li>
+              <li>The faint wild-type control line is worth a look at the glass, since it anchors the weak and moderate grades.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article id="case3" class="case" data-answer="null">
+          <span class="secnum">Case 3</span>
+          <h2>A third tumor, and the pattern that is easiest to miss.</h2>
+          <p>Unstained tumor nuclei can mean two very different things. The control lines on the slide decide which.</p>
+          <div class="case-slides">
+            <figure><img src="img/cases/null-he.jpg" alt="Whole H&E slide of case 3" loading="lazy"><figcaption><b>H&amp;E</b></figcaption></figure>
+            <figure><img src="img/cases/null-ihc.jpg" alt="Whole p53 slide of case 3 with the three control lines at the top" loading="lazy"><figcaption><b>p53 IHC</b>Control lines at the top; the tumor itself looks pale.</figcaption></figure>
+            <figure class="wide"><img src="img/cases/null-field.jpg" alt="Tumor nuclei of case 3 at high magnification on the p53 slide" loading="lazy"><figcaption><b>Tumor nuclei, high magnification</b>Blue counterstain only.</figcaption></figure>
+          </div>
+          <div class="quiz" aria-label="Your call for case 3">
+            <span class="k">Your call</span>
+            <div class="q"><p class="qq">Which p53 pattern is this?</p><div class="opts"><button type="button" class="opt" data-yes="0">Wild-type</button><button type="button" class="opt" data-yes="1">Null</button><button type="button" class="opt" data-yes="0">Overexpression</button></div><p class="fb" hidden></p></div>
+          </div>
+          <div class="reveal" hidden>
+            <h3>What the software read</h3>
+            <div class="readout">
+              <figure><img src="img/cases/null-graded.jpg" alt="Every graded tumor nucleus of case 3 drawn as a grey dot" loading="lazy"><figcaption>Grey dots only: no tumor nucleus reached even the weak grade.</figcaption></figure>
+              <div class="grades">
+                <div class="call abnormal">Null</div>
+                <table class="edu-table"><tr><th>Grade</th><th>Share of tumor nuclei</th></tr><tr><td><i class="g3"></i>3+ strong</td><td>0 %</td></tr><tr><td><i class="g2"></i>2+ moderate</td><td>0 %</td></tr><tr><td><i class="g1"></i>1+ weak</td><td>under 1 %</td></tr><tr><td><i class="g0"></i>0 unstained</td><td>99 %</td></tr></table>
+                <p>No staining in the tumor nuclei while the overexpression and wild-type control lines on the same slide stained normally. That is what makes it a null pattern rather than a stain that failed. Without controls on the glass, this slide and a failed run look the same.</p>
+              </div>
+            </div>
+            <h3>What the pathologist checks</h3>
+            <ul class="checks">
+              <li>The control lines stained: the overexpression line dark, the wild-type line visibly lighter, the null line clear.</li>
+              <li>Non-tumor cells on the slide, such as stromal or inflammatory cells, show at least some wild-type staining.</li>
+              <li>The tumor region is the tumor: an unstained area of stroma would also read as grey dots, which is why the pathologist marks the region.</li>
+            </ul>
+          </div>
+        </article>
+
+        <p class="sources">Three cases from a research cohort, de-identified, read with the PCI-AI platform. Generic case numbers; no patient information appears on this page. Percentages are the shares of graded tumor nuclei as printed on the platform's report. Research use only.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band next" aria-labelledby="h2n">
+    <div class="inner">
+      <div><h2 id="h2n">See the software read a case from start to finish.</h2><p>Eighty seconds from sign-in to a signed report.</p></div>
+      <div class="links"><a class="btn btn-primary" href="platform.html#demo">Watch the demo <span aria-hidden="true">→</span></a><a class="btn btn-quiet" href="education.html#modules">All modules</a></div>
+    </div>
+  </section>
+</main>
+<footer class="band">
+  <div class="inner">
+    <div class="fcol"><strong>Research use only — not for use in diagnostic procedures.</strong><span>PCI · 7505 Fannin St, 640B · Houston, TX 77054</span></div>
+    <div class="fcol links"><a href="mailto:support@pcibio.com">support@pcibio.com</a><a href="https://www.linkedin.com/company/precision-cellular-immunology/posts/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.pcibio.com" target="_blank" rel="noopener">pcibio.com</a><a href="privacy.html">Privacy &amp; terms</a></div>
+  </div>
+</footer>
+<script>
+  // Your call: pick a pattern, see the right one, then the answer opens.
+  document.querySelectorAll(".case").forEach(function (c) {
+    var q = c.querySelector(".q"), fb = q.querySelector(".fb"), opts = q.querySelectorAll(".opt"), reveal = c.querySelector(".reveal");
+    opts.forEach(function (b) {
+      b.addEventListener("click", function () {
+        if (q.dataset.done) return;
+        q.dataset.done = "1";
+        var ok = b.dataset.yes === "1";
+        opts.forEach(function (o) { o.disabled = true; if (o.dataset.yes === "1") o.classList.add("right"); });
+        if (!ok) b.classList.add("wrong");
+        fb.textContent = ok ? "Correct. Here is what the software read." : "Not quite. The right pattern is marked; here is what the software read."; fb.hidden = false;
+        reveal.hidden = false;
+      });
+    });
+  });
+</script>
+<script>
+  (function () {
+    try { if ("scrollRestoration" in history) history.scrollRestoration = "manual"; } catch (e) {}
+    function toTop() { if (!location.hash) window.scrollTo(0, 0); }
+    toTop(); window.addEventListener("pageshow", toTop);
+  })();
+</script>
+</body>
+</html>
